@@ -3,7 +3,7 @@
 
 ### Download Spark
 
-Here is Spark (page)[http://spark.apache.org/]. You can go to download
+Here is Spark [page](http://spark.apache.org/). You can go to download
 [page](http://spark.apache.org/downloads.html) in order to download Spark.
 
 - Choose Spark release: `1.6.0`
