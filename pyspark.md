@@ -34,6 +34,14 @@ We can put a lot of configuration before we run Spark to prevent Memory error an
 See more in [Spark configuration](http://spark.apache.org/docs/latest/configuration.html).
 Here is a sample script to run Spark on EC2 cluster.
 
+This is for `r3.8xlarge` instance
+
 ```bash
 IPYTHON_OPTS="notebook --ip=* --no-browser" ~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[32] --driver-memory 64g --executor-memory 64g --conf spark.driver.maxResultSize=0
+```
+
+This is for `r3.xlarge` instance
+
+```bash
+IPYTHON_OPTS="notebook --ip=* --no-browser" ~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[4] --driver-memory 32g --executor-memory 32g --conf spark.driver.maxResultSize=0
 ```
