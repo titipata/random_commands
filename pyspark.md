@@ -1,22 +1,21 @@
 [back to home](README.md)
 
-# Running PySpark on IPython Notebook
 
-
-### Download Spark
+# Download Spark
 
 Here is Spark [page](http://spark.apache.org/). You can go to download
 [page](http://spark.apache.org/downloads.html) in order to download Spark.
+Here is what I choose when I download Spark version `1.6.0`
 
 - Choose Spark release: `1.6.0`
 - Choose a package type: `Pre-built for Hadoop 2.6 or later`
 - Choose a download type: `Direct Download`
 
 Then click download Spark link, it will download Spark (size around 276 MB compressed).
-If you want to download to instance, just copy the link and use `wget` to download.
+If you want to download to instance, just copy the link (right click and copy)
+and use `wget` to download.
 
-
-### Run PySpark on IPython notebook
+### Run PySpark with IPython notebook
 
 Assume we download Spark into Desktop directory. We first have to path to Spark environment path
 into `.bash_profile`, something like the following line

@@ -1,6 +1,9 @@
 [back to home](README.md)
 
-# Show Github Branch in Terminal (Mac OSX)
+# Show Git Branch in Terminal (Mac OSX)
+
+This is a short documentation how to download git completion bash
+and also how to put branch highlight in bash commands.
 
 First is to load `git-completion.bash`:
 
@@ -9,7 +12,7 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 curl -OL http://github.com/git/git/raw/master/contrib/completion/git-completion.bash
 ```
 
-Then change the name of `git-completion` to `.git-completion`:
+Then change the name of `git-completion` to `.git-completion` as follows
 
 ```bash
 mv ~/git-completion.bash ~/.git-completion.bash
