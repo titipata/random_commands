@@ -45,3 +45,33 @@ This is for `r3.xlarge` instance
 ```bash
 IPYTHON_OPTS="notebook --ip=* --no-browser" ~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[4] --driver-memory 32g --executor-memory 32g --conf spark.driver.maxResultSize=0
 ```
+
+
+### Run Spark Snippet
+
+If we're going to run small example snippet in case you're submitting the job on
+computer cluster. First, we can create python file name `spark_example.py`.
+
+```python
+import os
+from pyspark import SparkConf, SparkContext
+
+# Configure the environment                                                     
+if 'SPARK_HOME' not in os.environ:
+    os.environ['SPARK_HOME'] = '/home/ubuntu/spark-1.6.0-bin-hadoop2.6'
+
+conf = SparkConf().setAppName('pubmed_open_access').setMaster('local[32]')
+sc = SparkContext(conf=conf)
+
+if __name__ == '__main__':
+    ls = range(100)
+    ls_rdd = sc.parallelize(ls, numSlices=1000)
+    ls_out = ls_rdd.map(lambda x: x+1).collect()
+    print 'output!: ', ls_out
+```
+
+Here is the bash script to run the code above.
+
+```bash
+~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[8] --driver-memory 12g --executor-memory 12g spark_example.py
+```

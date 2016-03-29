@@ -1,7 +1,7 @@
 # Show Github Branch in Terminal (Mac OSX)
 
 
-First do (to load `git-completion.bash`):
+First is to load `git-completion.bash`:
 
 ```bash
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
@@ -14,7 +14,7 @@ Then change the name of `git-completion` to `.git-completion`:
 mv ~/git-completion.bash ~/.git-completion.bash
 ```
 
-Then add these lines to `.bash_profile`
+Then add these lines to `.bash_profile` in order to add color to your bash.
 
 ```bash
 
@@ -36,7 +36,9 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 ```
 
+
 For those who has no color `tput colors` give you `8`, use this instead
+
 ```bash
 if [ -f ~/.git-completion.bash ]; then
     source ~/.git-completion.bash

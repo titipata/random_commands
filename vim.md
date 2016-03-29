@@ -1,4 +1,5 @@
 # VIM NOTE
+
 Collection of Vim commands with `spf13` plugin.
 
 **Note** Some commands may need `spf13` installed.
