@@ -2,6 +2,7 @@
 
 Before, I put a lot of files on [Gist](https://gist.github.com/). However, it started to
 get mixing with random topics. So I just want to put all scripts in one place.
+Mostly, these are commands related to bash, text editor and Python.
 
 Check out these following markdown files.
 

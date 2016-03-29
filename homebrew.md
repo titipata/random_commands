@@ -14,4 +14,4 @@ To install brew, simply do as following
 ```
 
 There are a tons of good packages that you can install e.g.
-`youtube-dl`, `vim`, `emacs`, and so on
+`youtube-dl`, `vim`, `emacs`, `git` and so on

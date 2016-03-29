@@ -1,9 +1,21 @@
 [back to home](README.md)
 
-# Show Git Branch in Terminal (Mac OSX)
+# Set up Git
 
-This is a short documentation how to download git completion bash
-and also how to put branch highlight in bash commands.
+Once you have package management system e.g. Homebrew on MacOSX.
+You can do `brew install git` in order to install `git`.
+Follow this [link](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+for more information. You can set up few information using `git config`
+
+```bash
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+# Git completion
+
+This is a short documentation how to download git completion bash.
+It makes life a lot easier when you tab and it auto-fills your commands.
 
 First is to load `git-completion.bash`:
 
@@ -18,7 +30,10 @@ Then change the name of `git-completion` to `.git-completion` as follows
 mv ~/git-completion.bash ~/.git-completion.bash
 ```
 
-Then add these lines to `.bash_profile` in order to add color to your bash.
+# Show Git Branch in Terminal (Mac OSX)
+
+To show Git branch in Terminal, add these lines to `.bash_profile`
+in order to add color to your bash.
 
 ```bash
 
