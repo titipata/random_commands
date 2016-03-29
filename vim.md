@@ -1,3 +1,5 @@
+[back to home](README.md)
+
 # VIM NOTE
 
 Collection of Vim commands with `spf13` plugin.

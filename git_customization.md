@@ -1,5 +1,6 @@
-# Show Github Branch in Terminal (Mac OSX)
+[back to home](README.md)
 
+# Show Github Branch in Terminal (Mac OSX)
 
 First is to load `git-completion.bash`:
 
