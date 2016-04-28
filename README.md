@@ -13,6 +13,8 @@ Check out these following markdown files.
 - [Vim](vim.md)
 - [Git customization](git_customization.md)
 - [Cowsay on terminal](cowsay.md)
+- [R on Jupyter Notebook](r_on_notebook.md)
+
 
 ## Runs by
 

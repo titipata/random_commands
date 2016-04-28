@@ -49,7 +49,7 @@ NORMAL=$(tput sgr0)
 
 source ~/.git-prompt.sh
 
-if [ -f ~/.git-completion.bash ]; then                                          
+if [ -f ~/.git-completion.bash ]; then
     source ~/.git-completion.bash
     export PS1='\W\[${LIME_YELLOW}\]$(__git_ps1 "(%s)")\[${NORMAL}\] > '
 fi
