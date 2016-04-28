@@ -12,6 +12,7 @@ Check out these following markdown files.
 - [PySpark](pyspark.md)
 - [Vim](vim.md)
 - [Git customization](git_customization.md)
+- [Cowsay on terminal](cowsay.md)
 
 ## Runs by
 
