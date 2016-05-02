@@ -1,4 +1,4 @@
-[back to home](README.md)
+[back to home](../README.md)
 
 # Set up Git
 

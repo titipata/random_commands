@@ -6,14 +6,15 @@ Mostly, these are commands related to bash, text editor and Python.
 
 Check out these following markdown files.
 
-- [Homebrew](homebrew.md)
-- [Macports with Python](macports.md)
-- [Python with Anaconda](anaconda.md)
-- [PySpark](pyspark.md)
-- [Vim](vim.md)
-- [Git customization](git_customization.md)
-- [Cowsay on terminal](cowsay.md)
-- [R on Jupyter Notebook](r_on_notebook.md)
+- [Homebrew](docs/homebrew.md)
+- [Macports with Python](docs/macports.md)
+- [Python with Anaconda](docs/anaconda.md)
+- [PySpark](docs/pyspark.md)
+- [Vim](docs/vim.md)
+- [Git customization](docs/git_customization.md)
+- [Cowsay on terminal](docs/cowsay.md)
+- [R on Jupyter Notebook](docs/r_on_notebook.md)
+- [Interfacing R with Python](docs/r_w_python.md)
 
 
 ## Runs by
