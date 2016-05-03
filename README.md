@@ -12,6 +12,7 @@ Check out these following markdown files.
 - [PySpark](docs/pyspark.md)
 - [Vim](docs/vim.md)
 - [Git customization](docs/git_customization.md)
+- [Git rebase](docs/git_rebase.md)
 - [Cowsay on terminal](docs/cowsay.md)
 - [R on Jupyter Notebook](docs/r_on_notebook.md)
 - [Interfacing R with Python](docs/r_w_python.md)
