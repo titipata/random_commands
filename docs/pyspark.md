@@ -78,5 +78,5 @@ if __name__ == '__main__':
 Here is the bash script to run the code above.
 
 ```bash
-~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[8] --driver-memory 12g --executor-memory 12g spark_example.py
+~/spark-1.6.0-bin-hadoop2.6/bin/spark-submit --master local[8] --driver-memory 12g --executor-memory 12g spark_example.py
 ```
