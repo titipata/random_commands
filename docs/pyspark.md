@@ -22,6 +22,8 @@ into `.bash_profile`, something like the following line
 
 ```bash
 export SPARK_HOME=~/Desktop/spark-1.6.0-bin-hadoop2.6
+export PYSPARK_PYTHON=~/anaconda3/bin/python
+export PYSPARK_DRIVER_PYTHON=~/anaconda3/bin/ipython # point to python driver
 ```
 
 Simple way to run `pyspark` is running `.bin/pyspark` (if you are in `spark-1.6.0-bin-hadoop2.6` folder).
@@ -38,14 +40,16 @@ Here is a sample script to run Spark on EC2 cluster.
 This is for `r3.8xlarge` instance
 
 ```bash
-PYSPARK_DRIVER_PYTHON=ipython PYSPARK_DRIVER_PYTHON_OPTS="notebook --ip=* --no-browser" ~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[32] --driver-memory 64g --executor-memory 64g --conf spark.driver.maxResultSize=0
+PYSPARK_DRIVER_PYTHON_OPTS="notebook --ip=* --no-browser" ~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[32] --driver-memory 64g --executor-memory 64g --conf spark.driver.maxResultSize=0
 ```
 
 This is for `r3.xlarge` instance
 
 ```bash
-PYSPARK_DRIVER_PYTHON=ipython PYSPARK_DRIVER_PYTHON_OPTS="notebook --ip=* --no-browser" ~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[4] --driver-memory 32g --executor-memory 32g --conf spark.driver.maxResultSize=0
+PYSPARK_DRIVER_PYTHON_OPTS="notebook --ip=* --no-browser" ~/spark-1.6.0-bin-hadoop2.6/bin/pyspark --master local[4] --driver-memory 32g --executor-memory 32g --conf spark.driver.maxResultSize=0
 ```
+
+You can also 
 
 
 ### Run Spark Snippet
@@ -68,7 +72,7 @@ if __name__ == '__main__':
     ls = range(100)
     ls_rdd = sc.parallelize(ls, numSlices=1000)
     ls_out = ls_rdd.map(lambda x: x+1).collect()
-    print 'output!: ', ls_out
+    print('output!: ', ls_out)
 ```
 
 Here is the bash script to run the code above.
