@@ -10,7 +10,7 @@ Check out these following markdown files.
 - [Macports with Python](docs/macports.md)
 - [Python with Anaconda](docs/anaconda.md)
 - [PySpark](docs/pyspark.md)
-- [](docs/python_http.md)
+- [Python HTTP server](docs/python_http.md)
 - [Vim](docs/vim.md)
 - [Git Customization](docs/git_customization.md)
 - [Git Rebase](docs/git_rebase.md)
