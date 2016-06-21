@@ -15,3 +15,13 @@ To install brew, simply do as following
 
 There are a tons of good packages that you can install e.g.
 `youtube-dl`, `vim`, `emacs`, `git` and so on
+
+Some useful `brew` commands includes
+
+```bash
+brew update # update to newest version of Homebrew
+brew upgrade # upgrade installed packages
+brew list # list installed packages
+brew uninstall <package_name>
+brew cleanup # remove outdated
+```
