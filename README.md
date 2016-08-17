@@ -18,6 +18,7 @@ Check out these following markdown files.
 - [Cowsay on terminal](docs/cowsay.md)
 - [R on Jupyter Notebook](docs/r_on_notebook.md)
 - [Interfacing R with Python](docs/r_w_python.md)
+- [Install XGBoost](docs/xgboost.md)
 
 
 ## Runs by
