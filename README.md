@@ -19,6 +19,7 @@ Check out these following markdown files.
 - [R on Jupyter Notebook](docs/r_on_notebook.md)
 - [Interfacing R with Python](docs/r_w_python.md)
 - [Install XGBoost](docs/xgboost.md)
+- [Cronjob](docs/cronjob.md)
 
 
 ## Runs by
