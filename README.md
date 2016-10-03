@@ -20,6 +20,7 @@ Check out these following markdown files.
 - [Interfacing R with Python](docs/r_w_python.md)
 - [Install XGBoost](docs/xgboost.md)
 - [Cronjob](docs/cronjob.md)
+- [Python wrapper for Stanford NLP](docs/stanford_nlp.md)
 
 
 ## Runs by
