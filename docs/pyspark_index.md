@@ -13,6 +13,7 @@ First, we'll create sample dataframe.
 
 ```python
 from pyspark.sql import Row
+from pyspark.sql.functions import col
 from pyspark.sql.types import StructType, StructField, LongType
 
 df = sqlContext.createDataFrame([Row(a=1, b=2), Row(a=3, b=4), Row(a=4, b=6), Row(a=5, b=9)])
@@ -33,3 +34,18 @@ df_indexed = (df.rdd # Extract rdd
     .map(lambda ri: row_with_index(*list(ri[0]) + [ri[1]])) # Map to rows
     .toDF(schema)) # It will work without schema but will be more expensive
 ```
+
+Then to select index, we can use `where`, as following
+
+```python
+indexes = [2,3]
+df_indexed.where(col('index').isin(indexes)).show()
+```
+
+
+## Adding new column to Spark DataFrame
+
+There are multiple way to add new column to Spark DataFrame. One technique is to
+create user-defined function (UDF) and apply to another column.
+
+- [Adding new column using UDF](http://stackoverflow.com/questions/33681487/how-do-i-add-a-new-column-to-spark-data-frame-pyspark)
