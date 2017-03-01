@@ -1,6 +1,5 @@
 [back to home](../README.md)
 
-
 # Jupyter and conda for R
 
 

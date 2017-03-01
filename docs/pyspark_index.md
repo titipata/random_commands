@@ -1,6 +1,6 @@
 [back to home](../README.md)
 
-## Index columns of PySpark dataframe
+## Index columns of PySpark DataFrame
 
 Here are 3 related Stack Overflow posts
 

@@ -1,6 +1,5 @@
 [back to home](../README.md)
 
-
 # Download Spark
 
 Here is Spark [page](http://spark.apache.org/). You can go to download
