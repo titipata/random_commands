@@ -4,10 +4,10 @@
 
 Here is Spark [page](http://spark.apache.org/). You can go to download
 [page](http://spark.apache.org/downloads.html) in order to download Spark.
-Here is what I choose when I download Spark version `1.6.0`
+Here is what I choose when I download Spark version `2.1.1`
 
-- Choose Spark release: `1.6.0`
-- Choose a package type: `Pre-built for Hadoop 2.6 or later`
+- Choose Spark release: `2.1.1`
+- Choose a package type: `Pre-built for Hadoop 2.7 or later`
 - Choose a download type: `Direct Download`
 
 Then click download Spark link, it will download Spark (size around 276 MB compressed).
@@ -20,16 +20,17 @@ Assume we download Spark into Desktop directory. We first have to path to Spark 
 into `.bash_profile`, something like the following line
 
 ```bash
-export SPARK_HOME=~/Desktop/spark-1.6.0-bin-hadoop2.6
+export SPARK_HOME=~/Desktop/spark-2.1.1-bin-hadoop2.7
 export PYSPARK_PYTHON=~/anaconda3/bin/python
 export PYSPARK_DRIVER_PYTHON=~/anaconda3/bin/ipython # point to python driver
+alias pyspark='PYSPARK_DRIVER_PYTHON_OPTS="notebook" $SPARK_HOME/bin/pyspark' # for running notebook
 ```
 
 Simple way to run `pyspark` is running `.bin/pyspark` (if you are in `spark-1.6.0-bin-hadoop2.6` folder).
 However, we typically run `pyspark` on IPython notebook. And it will look something like
 
 ```bash
-IPYTHON_OPTS="notebook" ~/Desktop/spark-1.6.0-bin-hadoop2.6/bin/pyspark
+PYSPARK_DRIVER_PYTHON_OPTS="notebook" ~/Desktop//spark-2.1.1-bin-hadoop2.7/bin/pyspark
 ```
 
 We can put a lot of configuration before we run Spark to prevent Memory error and all other things.
@@ -62,7 +63,7 @@ from pyspark import SparkConf, SparkContext
 
 # Configure the environment                                                     
 if 'SPARK_HOME' not in os.environ:
-    os.environ['SPARK_HOME'] = '/home/ubuntu/spark-1.6.0-bin-hadoop2.6'
+    os.environ['SPARK_HOME'] = '/home/ubuntu//spark-2.1.1-bin-hadoop2.7'
 
 conf = SparkConf().setAppName('pubmed_open_access').setMaster('local[32]')
 sc = SparkContext(conf=conf)
@@ -77,5 +78,5 @@ if __name__ == '__main__':
 Here is the bash script to run the code above.
 
 ```bash
-~/spark-1.6.0-bin-hadoop2.6/bin/spark-submit --master local[8] --driver-memory 12g --executor-memory 12g spark_example.py
+~/spark-2.1.1-bin-hadoop2.7/bin/spark-submit --master local[8] --driver-memory 12g --executor-memory 12g spark_example.py
 ```
